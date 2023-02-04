@@ -1,0 +1,19 @@
+{
+  "name": "pong",
+  "version": "1.0.0",
+  "description": "This is a agame pls try ...",
+  "main": "main.js",
+  "scripts": {
+    "start": "parcel index.html -p 8000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rudransh Bhardwaj a great programmer and 2* coder",
+  "license": "ISC",
+  "dependencies": {
+    "kaboom": "^2000.2.10",
+    "parcel": "^2.8.3"
+  },
+  "alias":{
+    "kaboom":"./node_modules/kaboom/dist/kaboom.mjs"
+  }
+}
