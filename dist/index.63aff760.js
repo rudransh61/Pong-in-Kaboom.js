@@ -569,6 +569,34 @@ const backimg = add([
     area(),
     scale(100)
 ]);
+onKeyDown("b", ()=>{
+    addKaboom(mousePos());
+});
+bx = 630;
+const p1 = add([
+    pos(80, 120),
+    rect(10, 100),
+    outline(4),
+    area()
+]);
+const c1 = add([
+    pos(1180, 120),
+    rect(10, 100),
+    outline(4),
+    area()
+]);
+const ball = add([
+    pos(bx, 120),
+    circle(16),
+    outline(4)
+]);
+bsy = 150;
+bsx = 150;
+ball.onUpdate(()=>{
+    ball.move(bsx, bsy);
+    if (ball.pos.y < 0 || ball.pos.y > 650) bsy *= -1;
+    if (ball.pos.x < 0 || ball.pos.x > 1350) bsx *= -1;
+});
 
 },{"kaboom":"larQu","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"larQu":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
